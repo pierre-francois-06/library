@@ -1,17 +1,33 @@
 export class Timer {
   constructor(id) {
     this.id = id;
-    this.type = null;
-    this.time = null;
+    this.duration = 0;
+    this.remaining = 0;
+    this.intervalId = null;
+    this.running = false;
   }
 
-  start(time) {
-    this.time = time;
+  start(seconds) {
+    this.duration = seconds;
+    this.remaining = seconds;
+    this.running = true;
 
-    const clock = () => {
-      this.time--;
-    };
+    this.intervalId = setInterval(() => {
+      this.remaining--;
 
-    setInterval(() => clock(), 1000);
+      if (this.remaining <= 0) {
+        this.stop();
+      }
+    }, 1000);
+  }
+
+  timeLeft() {
+    return this.remaining;
+  }
+
+  stop() {
+    clearInterval(this.intervalId);
+    this.intervalId = null;
+    this.running = false;
   }
 }
