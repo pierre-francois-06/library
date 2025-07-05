@@ -8,12 +8,11 @@ export class Timer {
   start(time) {
     this.time = time;
 
-    setInterval(clock(), this.time);
-
     const clock = () => {
+      console.log(this.time);
       this.time--;
     };
 
-    console.log(this.time);
+    setInterval(() => clock(), 1000);
   }
 }
