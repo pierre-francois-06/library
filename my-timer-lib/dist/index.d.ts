@@ -10,6 +10,7 @@ export declare class Timer {
     private intervalId;
     private running;
     private paused;
+    private finished;
     start(seconds: number): void;
     pause(): void;
     resume(): void;

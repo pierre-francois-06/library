@@ -7,16 +7,19 @@ export class Timer {
     intervalId = null;
     running = false;
     paused = false;
+    finished = false;
     start(seconds) {
         this.stop();
         this.duration = seconds;
         this.remaining = seconds;
         this.running = true;
         this.paused = false;
+        this.finished = false;
         this.intervalId = setInterval(() => {
             if (!this.paused) {
                 this.remaining--;
                 if (this.remaining <= 0) {
+                    this.finished = true;
                     this.stop();
                 }
             }
@@ -49,7 +52,7 @@ export class Timer {
             timeLeft: dayjs.duration(this.remaining, "seconds").format(format),
             isRunning: this.running,
             isPaused: this.paused,
-            isFinished: !this.running && this.remaining === 0,
+            isFinished: this.finished,
         };
     }
 }
