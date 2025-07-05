@@ -104,7 +104,7 @@ Resumes a paused timer.
 
 Resets the timer to its initial state.
 
-### `Timer.status(): { timeLeft: number, isRunning: boolean, isPaused: boolean }`
+### `Timer.getState(format: string): { timeLeft: number, isRunning: boolean, isPaused: boolean, isFinished: boolean }`
 
 Returns the current state of the timer.
 
