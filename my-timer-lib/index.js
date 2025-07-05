@@ -5,8 +5,15 @@ export class Timer {
     this.time = null;
   }
 
-  start(type) {
-    this.type = type;
-    console.log(`Timertype: ${this.type}`);
+  start(time) {
+    this.time = time;
+
+    setInterval(clock(), this.time);
+
+    const clock = () => {
+      this.time--;
+    };
+
+    console.log(this.time);
   }
 }
