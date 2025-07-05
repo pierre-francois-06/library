@@ -1,15 +1,21 @@
-# 🕒 my-timer-lib – einfache Timer-Logik für JavaScript/TypeScript-Projekte
+# ⏱️ my-timer-lib
 
-my-timer-lib ist eine minimalistische Timer-Bibliothek, mit der sich Zeitfunktionen wie start, pause, resume und reset ganz einfach steuern lassen. Ideal für React- oder Vite-Projekte, bei denen du z. B. die verbleibende Zeit in der UI anzeigen möchtest – ganz ohne externe Abhängigkeiten.
+Eine schlanke, leicht integrierbare Timer-Library für JavaScript- und TypeScript-Projekte. Ideal für React-, Vite- oder Vanilla-Apps – ohne externe Abhängigkeiten.
 
-## 🔧 Hauptfunktionen
+---
 
-start(seconds: number): Startet den Timer mit gewünschter Zeit
+## 🚀 Features
 
-pause(): Pausiert den Timer
+- ✅ Einfaches Starten, Pausieren, Fortsetzen und Zurücksetzen von Timern
+- ⏱️ Live-Abfrage der verbleibenden Zeit (`timeLeft`)
+- 🔁 Unterstützung mehrerer unabhängiger Timer-Instanzen
+- ⚙️ Kompatibel mit JavaScript **und** TypeScript
+- 🧪 Perfekt für UI-Logik (z. B. Countdown-Anzeigen)
 
-resume(): Setzt einen pausierten Timer fort
+---
 
-reset(): Setzt den Timer auf Anfang zurück
+## 📦 Installation
 
-status(): Gibt ein Objekt mit aktuellem Status zurück (timeLeft, running, paused, ...)
+```bash
+npm install my-timer-lib
+```
