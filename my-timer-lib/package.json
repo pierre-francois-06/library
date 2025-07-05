@@ -16,5 +16,8 @@
   "exports": "./index.js",
   "dependencies": {
     "dayjs": "^1.11.13"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
   }
 }
