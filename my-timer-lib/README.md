@@ -6,11 +6,11 @@ A lightweight, dependency-free timer library for JavaScript and TypeScript proje
 
 ## 📚 Table of Contents
 
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [API Reference](#api-reference)
-- [License](#license)
+- [Features](#-features)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [API Reference](#-api-reference)
+- [npm Package](#-direct-link-to-npm-package)
 
 ---
 
@@ -112,5 +112,7 @@ Returns the current state of the timer.
 
 ![npm version](https://img.shields.io/npm/v/my-timer-lib)
 ![License](https://img.shields.io/npm/l/my-timer-lib)
+
+### 🔗 Direct Link to npm Package
 
 📦 [View on npm](https://www.npmjs.com/package/my-timer-lib)
