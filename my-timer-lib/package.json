@@ -6,13 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "timer",
+    "javascript"
+  ],
   "author": "hentaisimplord",
   "license": "ISC",
   "type": "commonjs",
   "exports": "./index.js",
-  "keywords": [
-    "timer",
-    "javascript"
-  ]
+  "dependencies": {
+    "dayjs": "^1.11.13"
+  }
 }
