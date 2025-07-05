@@ -9,7 +9,6 @@ export class Timer {
     this.time = time;
 
     const clock = () => {
-      console.log(this.time);
       this.time--;
     };
 
