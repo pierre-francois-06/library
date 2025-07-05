@@ -1,0 +1,18 @@
+{
+  "name": "my-timer-lib",
+  "version": "1.0.0",
+  "description": "timer-lib",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "hentaisimplord",
+  "license": "ISC",
+  "type": "commonjs",
+  "exports": "./index.js",
+  "keywords": [
+    "timer",
+    "javascript"
+  ]
+}
